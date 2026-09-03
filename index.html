@@ -114,6 +114,9 @@
   .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .foot .brand{font-size:16px}
   .foot nav{display:flex;gap:18px;font-size:13.5px}
+  .foot .social{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--border);color:var(--ink);
+                display:inline-flex;align-items:center;justify-content:center;text-decoration:none;flex:none}
+  .foot .social:hover{border-color:var(--brand);color:var(--brand)}
   .foot .legal{font-size:12.5px;color:var(--slate);font-weight:600;margin-top:14px}
 </style>
 </head>
@@ -276,10 +279,10 @@
         <a href="#who">Who it's for</a>
         <a href="#reports">Reports</a>
         <a href="#pricing">Pricing</a>
-        <a href="mailto:support@ledgercaddy.com">Contact</a>
         <span class="ph">PRIVACY POLICY — PAGE TBD</span>
         <span class="ph">TERMS OF USE — PAGE TBD</span>
       </nav>
+      <a class="social" href="mailto:support@ledgercaddy.com" aria-label="Email LedgerCaddy support" title="support@ledgercaddy.com"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
     </div>
     <div class="legal">© 2026 DART Management Inc. · LedgerCaddy is made in Canada for the Mac.
 &nbsp;&nbsp;<span class="ph">support@ledgercaddy.com ACTIVATES AT LAUNCH</span></div>
