@@ -2,10 +2,13 @@
 <title>LedgerCaddy: Great Records. Professional Reports.</title><meta name="robots" content="noindex, nofollow">
 <meta name="description" content="LedgerCaddy is straightforward bookkeeping for the Mac. Your books live in one file on your computer. Great records, professional reports, nothing in the cloud.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Schibsted+Grotesk:wght@500..900&display=swap" rel="stylesheet">
 <style>
 :root{--brand:#0E6B64;--deep:#0A524C;--ink:#1A2523;--slate:#3E4A47;--paper:#F7F5EF;--card:#FCFBF8;--border:#D8D2C2;--gold:#F4B860;--gt:#FBF3DE;--tt:#E4F0EE;--tb:#CBE2DE;--tl:#7FC9BF;--mist:#B8C2BD;--rust:#B04A2E}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.card:hover,.cta:hover{transform:none}}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:16px;top:-60px;background:var(--brand);color:#fff;font-weight:800;padding:10px 14px;border-radius:10px;z-index:50;text-decoration:none}.skip:focus{top:12px}
 body{font-family:"Schibsted Grotesk",-apple-system,"Helvetica Neue",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
@@ -96,10 +99,10 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 .page img{width:100%;height:auto;border:1px solid var(--border);border-radius:6px;box-shadow:0 16px 40px rgba(26,37,35,.14);background:#fff}
 .pages figcaption{margin-top:14px;font-size:14.5px;font-weight:600;color:var(--slate);line-height:1.45}.pages figcaption b{color:var(--ink);font-weight:900}
 .stack{position:relative;aspect-ratio:900/1165;margin:0 12px 0 6px}
-.stack img{position:absolute;left:0;top:0;width:100%;border:1px solid var(--border);border-radius:6px;background:#fff;box-shadow:0 16px 40px rgba(26,37,35,.14)}
-.stack .s3{transform:translate(26px,20px) rotate(4deg);width:100%}
-.stack .s2{transform:translate(13px,10px) rotate(2deg)}
-.stack .s1{transform:none}
+.stack picture{position:absolute;left:0;top:0;width:100%;display:block}.stack picture img{width:100%;border:1px solid var(--border);border-radius:6px;background:#fff;box-shadow:0 16px 40px rgba(26,37,35,.14)}
+.stack picture:nth-child(1){transform:translate(26px,20px) rotate(4deg)}
+.stack picture:nth-child(2){transform:translate(13px,10px) rotate(2deg)}
+.stack picture:nth-child(3){transform:none}
 .reportlist{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 .reportlist span{background:var(--card);border:1.5px solid var(--border);border-radius:999px;padding:10px 16px;font-size:14.5px;font-weight:800}
 /* pricing */
@@ -136,6 +139,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 .foot nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}.foot nav a{color:var(--ink);font-weight:700;text-decoration:none}
 .legal{font-size:13px;color:var(--slate);font-weight:600;margin-top:16px}
 </style></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="topbar"><div class="wrap topbar-in"><a class="brand" href="#"><div class="tile"><img src="images/logo-mark.svg" alt="" width="138" height="95"></div>Ledger<span>Caddy</span></a>
 <nav class="main"><a href="#problem">Why</a><a href="#how">How it works</a><a href="#reports">Reports</a><a href="#pricing">Pricing</a><a href="support.html">Support</a></nav>
 <a class="cta" href="#pricing" style="font-size:15px;padding:12px 20px">See<span class="cs"> pricing</span></a>
@@ -144,14 +148,14 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 </div></header>
 <script>document.querySelectorAll('.mnav nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open')})})</script>
 
-<section class="hero" aria-labelledby="hero-title"><div class="wrap">
+<section class="hero" id="main" aria-labelledby="hero-title"><div class="wrap">
 <div class="hero-copy">
 <h1 id="hero-title">Keep great records.<br><span class="g">Hand your accountant professional reports.</span></h1>
 <p class="lead">Your books live in one file on your Mac. No cloud, no account, no subscription. Just clean records and the reports your accountant actually wants.</p>
 <div class="hero-ctas"><a class="cta" href="#pricing">See pricing</a><a class="ghost" href="#how">How it works</a></div>
 <p class="hero-note"><b>Launching fall 2026.</b> Free 14-day trial, no credit card. Then $50 USD, once.</p>
 </div>
-<figure class="hero-media"><img src="images/hero.jpg" alt="LedgerCaddy on a MacBook, showing the Home workspace with account balances, recent transactions and quick actions" width="1280" height="858" fetchpriority="high"></figure>
+<figure class="hero-media"><picture><source srcset="images/hero.webp" type="image/webp"><img src="images/hero.jpg" alt="LedgerCaddy on a MacBook, showing the Home workspace with account balances, recent transactions and quick actions" width="1280" height="858" fetchpriority="high"></picture></figure>
 </div></section>
 
 <div class="stats"><div class="wrap">
@@ -170,27 +174,27 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 
 <section class="white"><div class="wrap"><div class="split">
 <div><div class="eyebrow">The approach</div><h2>Just enough structure. Not too much.</h2>
-<p class="lead">Accounts, categories and payees are the three things that make books make sense. LedgerCaddy gives you those, then gets out of the way. Record what happened, reconcile against your statements, and the reports are simply there.</p>
+<p class="lead">Three things make books make sense: accounts (where the money sits), categories (what it was for) and payees (who you paid, or who paid you). LedgerCaddy gives you those, then gets out of the way. Record what happened, tick it off against your bank statement, and the reports are simply there.</p>
 <p class="sub" style="margin-top:14px">No accounting degree required. A built-in guide walks every screen, and the Sample Book lets you try everything before you touch your own numbers.</p></div>
-<figure class="frame"><img src="images/new-transaction.jpg" alt="The New Expense entry form: type, date, payee, account, category, amount with tax, memo and attachments" width="1200" height="620" loading="lazy"><div style="padding:14px 18px;border-top:1px solid var(--border);font-size:13.5px;font-weight:700;color:var(--slate)">Recording an expense. Payee remembered, tax worked out, receipt attached.</div></figure>
+<figure class="frame"><picture><source srcset="images/new-transaction.webp" type="image/webp"><img src="images/new-transaction.jpg" alt="The New Expense entry form: type, date, payee, account, category, amount with tax, memo and attachments" width="1200" height="620" loading="lazy"></picture><div style="padding:14px 18px;border-top:1px solid var(--border);font-size:13.5px;font-weight:700;color:var(--slate)">Recording an expense. Payee remembered, tax worked out, receipt attached.</div></figure>
 </div></div></section>
 
 <section id="how"><div class="wrap"><div class="head center"><div class="eyebrow">How it works</div><h2>Four habits. That's the whole system.</h2></div>
 <div class="habits">
-<div class="habit"><div class="num">01</div><h3>Record</h3><p>Income and expenses in seconds. Payees and tax handled for you.</p></div>
+<div class="habit"><div class="num">01</div><h3>Record</h3><p>Income and expenses in seconds. Payees and tax remembered for you.</p></div>
 <div class="habit"><div class="num">02</div><h3>Organize</h3><p>Accounts, categories and payees keep everything in its place.</p></div>
-<div class="habit"><div class="num">03</div><h3>Review</h3><p>See where the money goes. Reconcile against your statements.</p></div>
+<div class="habit"><div class="num">03</div><h3>Review</h3><p>See where the money goes. Reconcile, which just means checking your entries against the bank statement.</p></div>
 <div class="habit"><div class="num">04</div><h3>Report</h3><p>Professional reports whenever you need them: print, PDF or CSV.</p></div>
 </div></div></section>
 
 <section id="reports" class="tint"><div class="wrap"><div class="head center"><div class="eyebrow">Reports</div><h2>Professional reports for you and your accountant.</h2>
 <p class="lead" style="margin-left:auto;margin-right:auto">These are real pages from the Sample Book, exactly as LedgerCaddy prints them. Every report also exports to PDF and CSV.</p></div>
 <div class="pages">
-<figure class="page"><img src="images/reports/income-expense-summary.jpg" alt="Income and Expense Summary report page" width="1100" height="1131" loading="lazy"><figcaption><b>Income and Expense Summary.</b> The one your accountant asks for first.</figcaption></figure>
-<figure class="page"><img src="images/reports/category-summary.jpg" alt="Category Summary report page" width="1100" height="1131" loading="lazy"><figcaption><b>Category Summary.</b> Where the money went, ranked.</figcaption></figure>
+<figure class="page"><picture><source srcset="images/reports/income-expense-summary.webp" type="image/webp"><img src="images/reports/income-expense-summary.jpg" alt="Income and Expense Summary report page" width="1100" height="1131" loading="lazy"></picture><figcaption><b>Income and Expense Summary.</b> The one your accountant asks for first.</figcaption></figure>
+<figure class="page"><picture><source srcset="images/reports/category-summary.webp" type="image/webp"><img src="images/reports/category-summary.jpg" alt="Category Summary report page" width="1100" height="1131" loading="lazy"></picture><figcaption><b>Category Summary.</b> Where the money went, ranked.</figcaption></figure>
 </div>
 <div class="packrow">
-<figure class="pack"><div class="stack"><img class="s3" src="images/reports/period-pack-p4.jpg" alt="" width="900" height="695" loading="lazy"><img class="s2" src="images/reports/period-pack-p2.jpg" alt="" width="900" height="1165" loading="lazy"><img class="s1" src="images/reports/period-pack-p1.jpg" alt="The Period Pack, a multi-page PDF of year-end reports" width="900" height="1165" loading="lazy"></div></figure>
+<figure class="pack"><div class="stack"><picture><source srcset="images/reports/period-pack-p4.webp" type="image/webp"><img class="s3" src="images/reports/period-pack-p4.jpg" alt="" width="900" height="695" loading="lazy"></picture><picture><source srcset="images/reports/period-pack-p2.webp" type="image/webp"><img class="s2" src="images/reports/period-pack-p2.jpg" alt="" width="900" height="1165" loading="lazy"></picture><picture><source srcset="images/reports/period-pack-p1.webp" type="image/webp"><img class="s1" src="images/reports/period-pack-p1.jpg" alt="The Period Pack, a multi-page PDF of year-end reports" width="900" height="1165" loading="lazy"></picture></div></figure>
 <div class="packcopy"><div class="eyebrow">Year-end, in one click</div><h3>The Period Pack</h3><p>One button assembles the reports your accountant asks for into a single PDF: the Income and Expense Summary, Account Balances, the Tax Summary and the full Transaction Listing, all for the same period, all from the same books.</p><p>Send one file. Keep a copy. Done.</p></div>
 </div>
 <p class="sub" style="margin-top:28px;text-align:center">Filter any report by date, account, category, payee or status. Sort by any column. Pin the ones you run every month.</p>
@@ -199,7 +203,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 
 <section class="white"><div class="wrap"><div class="head"><div class="eyebrow">What you get</div><h2>By the end of your first month:</h2></div>
 <ul class="check outcomes">
-<li>Every transaction recorded, categorized and tied to a payee</li><li>Accounts reconciled against your statements</li><li>Tax collected and paid, tracked as you go</li><li>A clear picture of where the money goes, by category</li><li>Year-end reports assembled into one Period Pack PDF</li><li>A single backed-up file you can hand to anyone</li>
+<li>Every transaction recorded, categorized and tied to a payee</li><li>Every account checked against its bank statement</li><li>Tax collected and paid, tracked as you go</li><li>A clear picture of where the money goes, by category</li><li>Year-end reports assembled into one Period Pack PDF</li><li>A single backed-up file you can hand to anyone</li>
 </ul></div></section>
 
 <section id="fit"><div class="wrap"><div class="head"><div class="eyebrow">Is it for you?</div><h2>Honest fit, both ways.</h2></div>
@@ -238,7 +242,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <p class="sub" style="margin-top:20px">More answers, system requirements and how the licence works are on the <a href="support.html" style="color:var(--brand);font-weight:800">Support page</a>.</p></div></section>
 
 <section class="close"><div class="wrap"><div class="eyebrow">Launching fall 2026</div><h2>Great records, from day one.</h2>
-<p class="lead" style="margin-left:auto;margin-right:auto">Fourteen days free, every feature, no credit card. Then $50 USD, once.</p>
+<p class="lead" style="margin-left:auto;margin-right:auto">Fourteen days free, every feature, no credit card.</p>
 <div class="hero-ctas" style="justify-content:center"><a class="cta" href="#pricing">See pricing</a><a class="ghost" href="#how">How it works</a></div>
 </div></section>
 
