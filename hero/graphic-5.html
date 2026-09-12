@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#0E6B64;--deep:#0A524C;--ink:#1A2523;--slate:#3E4A47;--paper:#F7F5EF;--card:#FCFBF8;--border:#D8D2C2;--gold:#F4B860;--goldd:#D99A2B;--gt:#FBF3DE;--tt:#E4F0EE;--tb:#CBE2DE;--tl:#7FC9BF;--rust:#B04A2E}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:760px;overflow:hidden;background:var(--paper);font-family:"Schibsted Grotesk",-apple-system,Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.stage{position:relative;width:1200px;height:760px}
+svg{position:absolute;left:0;top:0}
+.chip{position:absolute;background:#fff;border:1.5px solid var(--border);border-radius:999px;padding:12px 18px;font-weight:900;font-size:16px;box-shadow:0 10px 30px rgba(26,37,35,.12);color:var(--deep)}
+.chip.gold{background:var(--gt);border-color:#E8CD8E;color:#7A5A12}
+.big{position:absolute;font-weight:900;letter-spacing:-2px;line-height:1}
+.mono{font-variant-numeric:tabular-nums}
+</style></head><body><div class="stage">
+<svg width="1200" height="760" viewBox="0 0 1200 760">
+ <defs><filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#1A2523" flood-opacity=".16"/></filter></defs>
+ <circle cx="720" cy="390" r="0" fill="none" stroke="#CBE2DE" stroke-width="0" opacity="1.0"/><circle cx="720" cy="390" r="150" fill="none" stroke="#CBE2DE" stroke-width="3" opacity="0.8200000000000001"/><circle cx="720" cy="390" r="220" fill="none" stroke="#CBE2DE" stroke-width="3" opacity="0.64"/><circle cx="720" cy="390" r="290" fill="none" stroke="#CBE2DE" stroke-width="3" opacity="0.45999999999999996"/><circle cx="720" cy="390" r="360" fill="none" stroke="#CBE2DE" stroke-width="3" opacity="0.28"/>
+ <circle cx="720" cy="390" r="150" fill="#E4F0EE"/>
+ <g transform="translate(720 390)" filter="url(#sh)">
+  <path d="M-110 -150 h150 l70 70 v230 a14 14 0 0 1 -14 14 h-206 a14 14 0 0 1 -14 -14 v-286 a14 14 0 0 1 14 -14 z" fill="#fff" stroke="#D8D2C2" stroke-width="2"/>
+  <path d="M40 -150 v70 h70" fill="#E4F0EE" stroke="#D8D2C2" stroke-width="2"/>
+  <rect x="-70" y="-40" width="140" height="18" rx="9" fill="#E4F0EE"/><rect x="-70" y="-6" width="100" height="14" rx="7" fill="#E4F0EE"/><rect x="-70" y="22" width="120" height="14" rx="7" fill="#E4F0EE"/>
+  <g transform="translate(0 92)"><circle r="46" fill="#0E6B64"/><rect x="-18" y="-8" width="36" height="28" rx="6" fill="#F4B860"/><path d="M-11 -8 v-8 a11 11 0 0 1 22 0 v8" fill="none" stroke="#F4B860" stroke-width="6"/></g>
+ </g>
+ <g transform="translate(940 200)"><circle r="44" fill="#F4B860"/><path d="M-16 0 l10 12 l24 -26" fill="none" stroke="#1A2523" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
+<div class="big" style="left:70px;top:90px;font-size:56px;line-height:1.02;max-width:460px">Your books.<br>Your Mac.<br><span style="color:var(--brand)">Nobody else's.</span></div>
+<div style="position:absolute;left:74px;top:320px;font-size:19px;font-weight:600;color:var(--slate);max-width:400px;line-height:1.4">One file on your computer. No cloud, no account, no subscription. Back it up like any document.</div>
+<div class="chip" style="left:74px;top:440px">✓ No cloud</div><div class="chip" style="left:214px;top:440px">✓ No account</div>
+<div class="chip" style="left:74px;top:505px">✓ Works offline</div><div class="chip gold" style="left:258px;top:505px">✓ Yours forever</div>
+<div style="position:absolute;left:470px;top:625px;width:500px;text-align:center;font-size:15px;font-weight:800;color:var(--slate)">LedgerCaddy Sample Book<span style="color:var(--mist)">.ledgercaddy.sqlite</span> · 0.3 MB</div>
+</div></body></html>

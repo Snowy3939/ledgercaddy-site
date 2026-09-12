@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#0E6B64;--deep:#0A524C;--ink:#1A2523;--slate:#3E4A47;--paper:#F7F5EF;--card:#FCFBF8;--border:#D8D2C2;--gold:#F4B860;--goldd:#D99A2B;--gt:#FBF3DE;--tt:#E4F0EE;--tb:#CBE2DE;--tl:#7FC9BF;--rust:#B04A2E}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:760px;overflow:hidden;background:var(--paper);font-family:"Schibsted Grotesk",-apple-system,Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.stage{position:relative;width:1200px;height:760px}
+svg{position:absolute;left:0;top:0}
+.chip{position:absolute;background:#fff;border:1.5px solid var(--border);border-radius:999px;padding:12px 18px;font-weight:900;font-size:16px;box-shadow:0 10px 30px rgba(26,37,35,.12);color:var(--deep)}
+.chip.gold{background:var(--gt);border-color:#E8CD8E;color:#7A5A12}
+.big{position:absolute;font-weight:900;letter-spacing:-2px;line-height:1}
+.mono{font-variant-numeric:tabular-nums}
+</style></head><body><div class="stage">
+<svg width="1200" height="760" viewBox="0 0 1200 760">
+ <defs><filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#1A2523" flood-opacity=".14"/></filter></defs>
+ <ellipse cx="640" cy="640" rx="620" ry="120" fill="#E4F0EF"/>
+ <rect x="120" y="510" width="52" height="90" rx="12" fill="#7FC9BF"/><rect x="200" y="480" width="52" height="120" rx="12" fill="#0E6B64"/><rect x="280" y="490" width="52" height="110" rx="12" fill="#7FC9BF"/><rect x="360" y="440" width="52" height="160" rx="12" fill="#0E6B64"/><rect x="440" y="450" width="52" height="150" rx="12" fill="#7FC9BF"/><rect x="520" y="400" width="52" height="200" rx="12" fill="#0E6B64"/><rect x="600" y="410" width="52" height="190" rx="12" fill="#7FC9BF"/><rect x="680" y="360" width="52" height="240" rx="12" fill="#0E6B64"/><rect x="760" y="370" width="52" height="230" rx="12" fill="#7FC9BF"/><rect x="840" y="310" width="52" height="290" rx="12" fill="#0E6B64"/><rect x="920" y="320" width="52" height="280" rx="12" fill="#7FC9BF"/><rect x="1000" y="260" width="52" height="340" rx="12" fill="#F4B860"/>
+ <path d="M146 500 C 400 440, 700 360, 1052 250" fill="none" stroke="#1A2523" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 14"/>
+ <circle cx="1052" cy="250" r="16" fill="#1A2523"/><circle cx="1052" cy="250" r="7" fill="#F4B860"/>
+ <line x1="100" y1="600" x2="1100" y2="600" stroke="#1A2523" stroke-width="3" stroke-linecap="round"/>
+ <g filter="url(#sh)"><rect x="700" y="70" width="400" height="130" rx="22" fill="#fff" stroke="#D8D2C2"/>
+  <text x="730" y="108" font-size="13" font-weight="900" fill="#3E4A47" letter-spacing="1.5" font-family="Schibsted Grotesk">NET THIS YEAR</text>
+  <text x="730" y="166" font-size="54" font-weight="900" fill="#0E6B64" letter-spacing="-2" font-family="Schibsted Grotesk">+$8,492.43</text></g>
+</svg>
+<div class="big" style="left:90px;top:70px;font-size:58px;max-width:560px;line-height:1.02">See where the<br>money goes.<br><span style="color:var(--brand)">Every month.</span></div>
+<div class="chip" style="left:96px;top:290px">✓ Live totals the moment you open Reports</div>
+<div class="chip gold" style="left:96px;top:350px">✓ Print, PDF or CSV — one click</div>
+<div style="position:absolute;left:100px;top:630px;display:flex;gap:26px;font-size:14px;font-weight:800;color:var(--slate)"><span><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#7FC9BF;vertical-align:-2px"></span> Income</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#0E6B64;vertical-align:-2px"></span> Net</span><span><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:#F4B860;vertical-align:-2px"></span> This month</span></div>
+</div></body></html>
