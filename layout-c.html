@@ -3,8 +3,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="variants.css"><style>
-.heroC{padding:64px 0 40px}.heroC .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}@media(max-width:880px){.heroC .wrap{grid-template-columns:1fr}}
-.heroC h1{font-size:clamp(38px,5.4vw,56px)}
+.heroC{padding:0;position:relative;min-height:660px;display:flex;align-items:center;background:var(--paper) url(images/hero-desk.jpg) no-repeat right center;background-size:cover}
+.heroC::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,245,239,.96) 0,rgba(247,245,239,.90) 34%,rgba(247,245,239,.35) 52%,rgba(247,245,239,0) 66%)}
+.heroC .wrap{position:relative;width:100%;padding-top:72px;padding-bottom:72px}
+.heroC .copy{max-width:560px}
+@media(max-width:880px){.heroC{min-height:0;background-position:78% top;background-size:auto 60%}.heroC::before{background:linear-gradient(180deg,rgba(247,245,239,0) 0,rgba(247,245,239,0) 30%,rgba(247,245,239,.97) 52%)}.heroC .wrap{padding-top:300px}}
+.heroC h1{font-size:clamp(38px,5.4vw,58px)}
 .pain{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}@media(max-width:880px){.pain{grid-template-columns:1fr}}
 .pain .card{border-left:5px solid var(--gold)}
 .approach{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:28px}@media(max-width:880px){.approach{grid-template-columns:1fr}}
@@ -25,14 +29,13 @@
 <nav class="main"><a href="#who">Who it's for</a><a href="#how">How it works</a><a href="#reports">Reports</a><a href="#pricing">Pricing</a></nav>
 <a class="cta soon" href="#pricing">Download for Mac — <em>coming soon</em></a></div></header>
 
-<section class="heroC"><div class="wrap"><div>
+<section class="heroC"><div class="wrap"><div class="copy">
 <div class="eyebrow">For small businesses, landlords, clubs and freelancers</div>
 <h1 style="margin-top:8px">Keep great records.<br><span class="g">Hand your accountant professional reports.</span></h1>
 <p class="sub" style="margin-top:14px;max-width:480px">LedgerCaddy is straightforward bookkeeping for the Mac. Your books live in one file on your computer — nothing in the cloud, nothing to subscribe to.</p>
 <div style="display:flex;gap:12px;margin-top:26px;flex-wrap:wrap"><a class="cta soon" href="#pricing">Try it free for 14 days — <em>coming soon</em></a><a class="ghost" href="#pricing">$50 once, yours forever</a></div>
-</div>
-<figure><div class="crop"><img src="images/crops/category-bars.png" alt="Top expense categories" style="max-width:430px;margin:0 auto"></div><figcaption style="text-align:center">Reports tell you where the money went — before you run one.</figcaption></figure>
-</div></section>
+<ul class="check" style="margin-top:22px"><li>Native Mac app · Apple silicon &amp; Intel</li><li>Private &amp; local — one file on your Mac</li><li>14-day free trial, no credit card</li></ul>
+</div></div></section>
 <section class="white"><div class="wrap"><div class="eyebrow">The problem</div><h2>Bookkeeping shouldn't feel like this.</h2>
 <div class="pain">
 <div class="card"><h3>The spreadsheet that grew</h3><p>Tabs for every month, formulas nobody trusts, and a year-end scramble to make it add up.</p></div>
