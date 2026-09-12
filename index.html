@@ -13,12 +13,12 @@ img{max-width:100%;height:auto;display:block}
 .topbar{background:rgba(252,251,248,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:18px 0;position:sticky;top:0;z-index:5}
 .topbar-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:22px;letter-spacing:-.4px;text-decoration:none;color:var(--ink)}
-.brand .tile{width:42px;height:42px;border-radius:11px;background:#505D6A;display:flex;align-items:center;justify-content:center;padding:5px}.brand .tile img{width:100%;height:100%;display:block}
-.brand span{color:#1D6938}
+.brand .tile{height:44px;width:auto;display:flex;align-items:center}.brand .tile img{height:44px;width:auto;display:block}
+.brand span{color:#3F8020}
 nav.main{display:flex;gap:30px;font-size:15.5px;font-weight:800;white-space:nowrap}nav.main a{color:var(--slate);text-decoration:none}nav.main a:hover{color:var(--brand)}
 @media(max-width:1180px){nav.main{gap:22px;font-size:15px}}
 @media(max-width:960px){nav.main{display:none}}
-@media(max-width:600px){.topbar{padding:14px 0}.brand{font-size:19px;gap:9px}.brand .tile{width:36px;height:36px}.topbar .cta{font-size:14px;padding:11px 16px}.topbar .cta .cs{display:none}}
+@media(max-width:600px){.topbar{padding:14px 0}.brand{font-size:19px;gap:9px}.brand .tile,.brand .tile img{height:36px}.topbar .cta{font-size:14px;padding:11px 16px}.topbar .cta .cs{display:none}}
 .cta{background:var(--brand);color:#fff;font-weight:800;font-size:15px;padding:13px 22px;border-radius:12px;text-decoration:none;white-space:nowrap;display:inline-block;transition:transform .15s,background .15s}
 .cta:hover{background:var(--deep);transform:translateY(-1px)}.cta.soon{background:var(--ink)}.cta.soon em{font-style:normal;color:var(--tl)}
 .ghost{background:transparent;border:2px solid var(--border);color:var(--ink);font-weight:800;font-size:15px;padding:11px 20px;border-radius:12px;text-decoration:none;display:inline-block}
@@ -44,10 +44,8 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 .hero-ctas .ghost{font-size:16px;padding:13px 24px}
 .hero-note{margin-top:22px;font-size:14.5px;font-weight:700;color:var(--slate)}
 .hero-note b{color:var(--brand)}
-.hero-media{width:100%;max-width:640px;aspect-ratio:640/500;justify-self:end;border-radius:18px;background:#EEF4F2;border:1.5px dashed var(--tb);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:24px;color:var(--brand)}
-.hero-media .ph-title{font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-.hero-media .ph-size{font-size:22px;font-weight:900;letter-spacing:-.3px;color:var(--deep)}
-.hero-media .ph-note{font-size:13px;font-weight:700;color:var(--slate)}
+.hero-media{width:100%;max-width:640px;justify-self:end;border-radius:18px;overflow:hidden;box-shadow:0 22px 50px rgba(26,37,35,.16);background:var(--card)}
+.hero-media img{display:block;width:100%;height:auto}
 @media(max-width:1280px){.hero .wrap{gap:48px}.hero{padding:80px 0 72px}}
 @media(max-width:1100px){.hero .wrap{gap:40px}.hero{padding:72px 0 64px}}
 @media(max-width:820px){.hero{padding:56px 0 56px}.hero .wrap{grid-template-columns:1fr;gap:40px;padding:0 24px}.hero h1{font-size:clamp(36px,9.8vw,52px)}.hero .lead{margin-top:22px}.hero-ctas{margin-top:28px}.hero-media{max-width:none;justify-self:stretch}}
@@ -115,7 +113,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 .foot nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}.foot nav a{color:var(--ink);font-weight:700;text-decoration:none}
 .legal{font-size:13px;color:var(--slate);font-weight:600;margin-top:16px}
 </style></head><body>
-<header class="topbar"><div class="wrap topbar-in"><a class="brand" href="#"><div class="tile"><img src="images/logo-glyph.png" alt="" width="128" height="128"></div>Ledger<span>Caddy</span></a>
+<header class="topbar"><div class="wrap topbar-in"><a class="brand" href="#"><div class="tile"><img src="images/logo-mark.png" alt="" width="138" height="95"></div>Ledger<span>Caddy</span></a>
 <nav class="main"><a href="#problem">Why</a><a href="#how">How it works</a><a href="#reports">Reports</a><a href="#fit">Fit</a><a href="#pricing">Pricing</a></nav>
 <a class="cta" href="#pricing" style="font-size:15px;padding:12px 20px">Download<span class="cs"> for Mac</span></a></div></header>
 
@@ -126,11 +124,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <div class="hero-ctas"><a class="cta" href="#pricing">Download for Mac</a><a class="ghost" href="#pricing">See pricing</a></div>
 <p class="hero-note">Free 14-day trial, no credit card. Then <b>$50, once.</b></p>
 </div>
-<div class="hero-media" role="img" aria-label="Placeholder for the LedgerCaddy hero image">
-<div class="ph-title">Future LedgerCaddy hero image</div>
-<div class="ph-size">640 × 500 px</div>
-<div class="ph-note">Recommended source image: 1280 × 1000 px</div>
-</div>
+<figure class="hero-media"><img src="images/hero.jpg" alt="LedgerCaddy on a MacBook, showing the Home workspace with account balances, recent transactions and quick actions" width="1280" height="858" fetchpriority="high"></figure>
 </div></section>
 
 <div class="stats"><div class="wrap">
@@ -204,7 +198,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <div class="hero-ctas" style="justify-content:center"><a class="cta" href="#pricing">Download for Mac</a></div>
 </div></section>
 
-<footer><div class="wrap"><div class="foot"><div class="brand"><div class="tile"><img src="images/logo-glyph.png" alt="" width="128" height="128"></div>Ledger<span>Caddy</span></div>
+<footer><div class="wrap"><div class="foot"><div class="brand"><div class="tile"><img src="images/logo-mark.png" alt="" width="138" height="95"></div>Ledger<span>Caddy</span></div>
 <nav><a href="#how">How it works</a><a href="#reports">Reports</a><a href="#pricing">Pricing</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refunds.html">Refunds</a><a href="mailto:support@ledgercaddy.com">Contact</a></nav></div>
 <div class="legal">© 2026 DART Management Inc. · LedgerCaddy is made in Canada for the Mac.</div></div></footer>
 </body></html>
