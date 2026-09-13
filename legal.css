@@ -5,9 +5,9 @@ body{font-family:"Schibsted Grotesk",-apple-system,"Helvetica Neue",Arial,sans-s
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
 .topbar{background:var(--card);border-bottom:1px solid var(--border);padding:14px 0}
 .topbar-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;color:var(--ink);text-decoration:none}
-.brand .mark{height:36px;width:auto;display:block}
-.brand span{color:#3F8020}
+.brand{display:flex;align-items:center;gap:0;font-weight:900;font-size:18px;color:var(--ink);text-decoration:none}
+.brand .mark{height:36px;width:auto;display:block;margin-right:10px}
+.brand span{color:#0E7C4A}
 .topbar a.back{font-size:14px;font-weight:800;color:var(--brand-deep);text-decoration:none}
 .topbar a.back:hover{color:var(--brand)}
 main{padding:48px 0 64px}
