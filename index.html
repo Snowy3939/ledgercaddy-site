@@ -38,7 +38,7 @@ nav.main{display:flex;gap:30px;font-size:15.5px;font-weight:800;white-space:nowr
 .cta:hover{background:var(--deep);transform:translateY(-1px)}.cta.soon{background:var(--ink)}.cta.soon em{font-style:normal;color:var(--tl)}
 .ghost{background:transparent;border:2px solid var(--border);color:var(--ink);font-weight:800;font-size:15px;padding:11px 20px;border-radius:12px;text-decoration:none;display:inline-block}
 .ghost:hover{border-color:var(--brand);color:var(--brand)}
-.eyebrow{font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--brand)}
+.eyebrow{font-size:17px;font-weight:900;letter-spacing:2.2px;text-transform:uppercase;color:var(--brand)}.price .eyebrow{font-size:12px;letter-spacing:2px}
 h2{font-size:clamp(30px,3.8vw,42px);font-weight:900;letter-spacing:-1.2px;line-height:1.06;margin-top:10px}
 h3{font-size:20px;font-weight:900;letter-spacing:-.3px}
 .lead{font-size:18px;color:var(--slate);font-weight:600;margin-top:14px;max-width:640px;line-height:1.5}
@@ -76,7 +76,18 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 .card{background:var(--card);border:1.5px solid var(--border);border-radius:20px;padding:30px 28px;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(26,37,35,.10)}
 .card p{font-size:15.5px;color:var(--slate);font-weight:600;margin-top:10px;line-height:1.5}
-.card .n{font-size:44px;font-weight:900;color:var(--gold);letter-spacing:-2px;line-height:1;margin-bottom:14px}
+.prob{display:grid;grid-template-columns:minmax(250px,5fr) 8fr;gap:24px;align-items:stretch}
+.prob-side{background:var(--tt);border-radius:22px;padding:36px 30px}
+.prob-side h2{font-size:clamp(28px,3vw,38px);margin-top:10px}
+.prob-side .rule{width:48px;height:4px;background:var(--gold);border-radius:4px;margin:20px 0}
+.prob-side p{font-size:16.5px;color:var(--slate);font-weight:600;line-height:1.55}
+.prob-list{display:grid;gap:16px;align-content:stretch}
+.prow{display:grid;grid-template-columns:64px 2px 1fr;align-items:center;gap:18px;background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:22px 24px 22px 22px}
+.pn{width:64px;height:64px;border-radius:50%;background:var(--gt);color:var(--gold);font-size:36px;font-weight:900;display:flex;align-items:center;justify-content:center;line-height:1}
+.vline{width:2px;height:56px;background:var(--gold);border-radius:2px}
+.prow h3{font-size:20px;margin:0}.prow p{font-size:15.5px;color:var(--slate);font-weight:600;margin-top:4px;line-height:1.5}
+@media(max-width:880px){.prob{grid-template-columns:1fr}}
+@media(max-width:520px){.prow{grid-template-columns:52px 1fr;gap:14px;padding:18px}.vline{display:none}.pn{width:52px;height:52px;font-size:28px}}
 /* approach split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:8px}@media(max-width:880px){.split{grid-template-columns:1fr}}
 .frame{background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 22px 50px rgba(26,37,35,.12);overflow:hidden}
@@ -86,9 +97,13 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 .check.no li::before{content:"×";background:#F3D9D1;color:var(--rust)}
 .outcomes{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:20px}@media(max-width:700px){.outcomes{grid-template-columns:1fr}}
 /* habits */
-.habits{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:32px}@media(max-width:880px){.habits{grid-template-columns:1fr 1fr}}
-.habit .num{font-size:72px;font-weight:900;letter-spacing:-4px;line-height:.9;color:var(--tb)}
-.habit h3{margin-top:10px;font-size:22px}.habit p{font-size:15.5px;color:var(--slate);font-weight:600;margin-top:6px}
+.habits{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:36px auto 0;max-width:900px}@media(max-width:520px){.habits{grid-template-columns:1fr}}
+.habit{background:#fff;border:2.5px solid var(--brand);border-radius:18px;padding:34px 24px 32px;position:relative;overflow:hidden;text-align:center;box-shadow:0 6px 0 var(--tb),0 22px 40px -24px rgba(14,107,100,.45)}
+.habit::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--gold)}
+.habit h3{margin:0;font-size:28px;letter-spacing:-.5px;display:flex;justify-content:center;align-items:baseline;gap:10px}.habit .num{color:var(--brand);font-weight:900}
+
+.habit .rule{width:44px;height:3px;background:var(--brand);border-radius:3px;margin:14px auto 16px}
+.habit ul{list-style:none;margin:0;padding:0}.habit li{font-size:17px;color:var(--ink);opacity:.85;font-weight:600;line-height:1.4;padding:4px 0}
 /* reports: real pages */
 .pages{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px;align-items:start;max-width:1040px;margin-left:auto;margin-right:auto}
 @media(max-width:760px){.pages{grid-template-columns:1fr;max-width:520px}}
@@ -110,7 +125,7 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 @media(max-width:880px){.price-grid{grid-template-columns:1fr;max-width:460px}}
 .price{background:var(--card);border:1.5px solid var(--border);border-radius:22px;padding:30px 24px;display:flex;flex-direction:column;position:relative}
 .price.main{border:2px solid var(--brand);box-shadow:0 26px 60px rgba(14,107,100,.16);transform:scale(1.03)}
-.price.main::before{content:"Most people";position:absolute;top:-14px;left:28px;background:var(--brand);color:#fff;font-size:12px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.price.main::before{content:"Everything included";position:absolute;top:-14px;left:28px;background:var(--brand);color:#fff;font-size:12px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
 .price h3{font-size:20px;margin-top:8px;letter-spacing:-.4px}
 .price .desc{font-size:15px;font-weight:600;color:var(--slate);margin-top:6px;min-height:44px}
 .price .amount{font-size:48px;font-weight:900;margin:18px 0 2px;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-2px}
@@ -165,12 +180,13 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <div class="stat"><b>1 PDF</b><span>Your whole year-end, assembled</span></div>
 </div></div>
 
-<section id="problem"><div class="wrap"><div class="head"><div class="eyebrow">The problem</div><h2>Bookkeeping shouldn't feel like this.</h2></div>
-<div class="grid3">
-<div class="card"><div class="n">01</div><h3>The spreadsheet that grew</h3><p>Tabs for every month, formulas nobody trusts, and a year-end scramble to make it add up.</p></div>
-<div class="card"><div class="n">02</div><h3>Software built for someone else</h3><p>Payroll, inventory, multi-entity consolidation, and a monthly bill, when all you needed was clean books.</p></div>
-<div class="card"><div class="n">03</div><h3>The cloud you didn't ask for</h3><p>Your finances on someone else's server, behind a login, at a price that goes up every year.</p></div>
-</div></div></section>
+<section id="problem"><div class="wrap"><div class="prob">
+<aside class="prob-side"><div class="eyebrow">The problem</div><h2>Bookkeeping shouldn't feel like this.</h2><div class="rule"></div><p>Too many small businesses struggle with bookkeeping tools that are complicated, unreliable or just not designed for the way they work.</p></aside>
+<div class="prob-list">
+<div class="prow"><div class="pn">1</div><div class="vline"></div><div><h3>The spreadsheet that grew</h3><p>Tabs for every month, formulas nobody trusts, and a year-end scramble to make it add up.</p></div></div>
+<div class="prow"><div class="pn">2</div><div class="vline"></div><div><h3>Software built for someone else</h3><p>Payroll, inventory, multi-entity consolidation, and a monthly bill, when all you needed was clean books.</p></div></div>
+<div class="prow"><div class="pn">3</div><div class="vline"></div><div><h3>The cloud you didn't ask for</h3><p>Your finances on someone else's server, behind a login, at a price that goes up every year.</p></div></div>
+</div></div></div></section>
 
 <section class="white"><div class="wrap"><div class="split">
 <div><div class="eyebrow">The approach</div><h2>Just enough structure. Not too much.</h2>
@@ -181,10 +197,10 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 
 <section id="how"><div class="wrap"><div class="head center"><div class="eyebrow">How it works</div><h2>Four habits. That's the whole system.</h2></div>
 <div class="habits">
-<div class="habit"><div class="num">01</div><h3>Record</h3><p>Income and expenses in seconds. Payees and tax remembered for you.</p></div>
-<div class="habit"><div class="num">02</div><h3>Organize</h3><p>Accounts, categories and payees keep everything in its place.</p></div>
-<div class="habit"><div class="num">03</div><h3>Review</h3><p>See where the money goes. Reconcile, which just means checking your entries against the bank statement.</p></div>
-<div class="habit"><div class="num">04</div><h3>Report</h3><p>Professional reports whenever you need them: print, PDF or CSV.</p></div>
+<div class="habit"><h3><span class="num">1</span>Record</h3><div class="rule"></div><ul><li>Enter income and expenses.</li><li>Add payees and categories.</li><li>Apply tax and gratuities when needed.</li><li>Your records stay organized.</li></ul></div>
+<div class="habit"><h3><span class="num">2</span>Organize</h3><div class="rule"></div><ul><li>Keep accounts in order.</li><li>Organize with categories.</li><li>Remember your payees.</li><li>Find what you need quickly.</li></ul></div>
+<div class="habit"><h3><span class="num">3</span>Review</h3><div class="rule"></div><ul><li>Review your transactions.</li><li>Check account balances.</li><li>Correct anything needed.</li><li>Reconcile with confidence.</li></ul></div>
+<div class="habit"><h3><span class="num">4</span>Report</h3><div class="rule"></div><ul><li>Create professional reports.</li><li>Customize what you need.</li><li>Review or share results.</li><li>Print, PDF or export to CSV.</li></ul></div>
 </div></div></section>
 
 <section id="reports" class="tint"><div class="wrap"><div class="head center"><div class="eyebrow">Reports</div><h2>Professional reports for you and your accountant.</h2>
@@ -213,7 +229,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 </div></div></section>
 
 <section id="pricing" class="tint"><div class="wrap"><div class="head center"><div class="eyebrow">Pricing</div><h2>Buy it once. Own it forever.</h2>
-<p class="lead" style="margin-left:auto;margin-right:auto">No subscription. No tiers. Try it, buy it, and keep updates coming only if you want them.</p></div>
+<p class="lead" style="margin-left:auto;margin-right:auto;max-width:none">No subscription. No tiers. Try it, buy it, and keep updates coming only if you want them.</p></div>
 <div class="price-grid">
 <div class="price"><div class="eyebrow">Step 1</div><h3>Try it free</h3><p class="desc">Fourteen days with every feature. No credit card, nothing to cancel.</p><div class="amount">Free <small>for 14 days</small></div><ul><li>Full app, real books, real reports</li><li>Your data stays if you decide to buy</li></ul></div>
 <div class="price main"><div class="eyebrow">Step 2</div><h3>Buy it once</h3><p class="desc">Pay once and own LedgerCaddy. Use it for as long as you like.</p><div class="amount">$50 <small>USD, one-time</small></div><ul><li>Yours forever, no subscription</li><li>All updates included for 12 months</li><li>Every feature. No add-ons</li><li>Use it on up to two of your Macs</li></ul></div>
