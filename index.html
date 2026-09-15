@@ -62,7 +62,7 @@ section{padding:64px 0}@media(max-width:700px){section{padding:48px 0}}
 .hero-media{width:100%;max-width:640px;justify-self:end;border-radius:18px;overflow:hidden;box-shadow:0 22px 50px rgba(26,37,35,.16);background:var(--card)}
 .hero-media img{display:block;width:100%;height:auto}
 @media(max-width:1280px){.hero .wrap{gap:48px}.hero{padding:80px 0 72px}}
-@media(max-width:1100px){.hero .wrap{gap:40px}.hero{padding:72px 0 64px}}
+@media(max-width:1100px){.hero .wrap{gap:40px;grid-template-columns:minmax(0,62fr) minmax(0,38fr)}.hero .lead{font-size:16.5px}.hero{padding:72px 0 64px}}
 @media(max-width:820px){.hero{padding:56px 0 56px}.hero .wrap{grid-template-columns:1fr;gap:40px;padding:0 24px}.hero h1{font-size:clamp(36px,9.8vw,52px)}.hero .lead{margin-top:22px}.hero-ctas{margin-top:28px}.hero-media{max-width:none;justify-self:stretch}}
 /* stats band */
 .feats{margin-top:-34px;position:relative;z-index:2;padding:0 24px}
@@ -177,7 +177,7 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <section class="hero" id="main" aria-labelledby="hero-title"><div class="wrap">
 <div class="hero-copy">
 <h1 id="hero-title">Bookkeeping<br><span class="g">for people who are<br>not bookkeepers.</span></h1>
-<p class="lead">LedgerCaddy turns income and expenses into clean, reconciled books and a single PDF of professional reports. No accounting degree, no subscription, no cloud. Just a Mac app that keeps you organized all year so year-end is one click.</p>
+<p class="lead">LedgerCaddy turns income and expenses into reconciled books and professional reports. No accounting degree, no subscription, no cloud. Always organized. Any report is one click away.</p>
 <div class="hero-ctas"><a class="cta" href="#how">See how it works</a><a class="ghost" href="#pricing">Try free for 14 days</a></div>
 <p class="hero-note">Free 14-day trial. No credit card, no account, nothing to cancel.</p>
 </div>
@@ -212,15 +212,15 @@ footer{background:var(--card);border-top:1px solid var(--border);padding:40px 0}
 <section id="reports" class="tint"><div class="wrap"><div class="head center"><div class="eyebrow">Reports</div><h2>Professional reports<br>for you and your accountant.</h2>
 <p class="lead" style="margin-left:auto;margin-right:auto">These are real pages from the Sample Book, exactly as LedgerCaddy prints them. Every report also exports to PDF and CSV.</p></div>
 <div class="pages">
-<figure class="page"><picture><source srcset="images/reports/income-expense-summary.webp" type="image/webp"><img src="images/reports/income-expense-summary.jpg" alt="Income and Expense Summary report page" width="1100" height="1131" loading="lazy"></picture><figcaption><b>Income and Expense Summary.</b> The one your accountant asks for first.</figcaption></figure>
+<figure class="page"><picture><source srcset="images/reports/profit-loss.webp" type="image/webp"><img src="images/reports/profit-loss.jpg" alt="Profit &amp; Loss report page" width="1100" height="1131" loading="lazy"></picture><figcaption><b>Profit &amp; Loss.</b> The one your accountant asks for first.</figcaption></figure>
 <figure class="page"><picture><source srcset="images/reports/category-summary.webp" type="image/webp"><img src="images/reports/category-summary.jpg" alt="Category Summary report page" width="1100" height="1131" loading="lazy"></picture><figcaption><b>Category Summary.</b> Where the money went, ranked.</figcaption></figure>
 </div>
 <div class="packrow">
 <figure class="pack"><div class="stack"><picture><source srcset="images/reports/period-pack-p4.webp" type="image/webp"><img class="s3" src="images/reports/period-pack-p4.jpg" alt="" width="900" height="695" loading="lazy"></picture><picture><source srcset="images/reports/period-pack-p2.webp" type="image/webp"><img class="s2" src="images/reports/period-pack-p2.jpg" alt="" width="900" height="1165" loading="lazy"></picture><picture><source srcset="images/reports/period-pack-p1.webp" type="image/webp"><img class="s1" src="images/reports/period-pack-p1.jpg" alt="The Period Pack, a multi-page PDF of year-end reports" width="900" height="1165" loading="lazy"></picture></div></figure>
-<div class="packcopy"><div class="eyebrow">Year-end, in one click</div><h3>The Period Pack</h3><p>One button assembles the reports your accountant asks for into a single PDF: the Income and Expense Summary, Account Balances, the Tax Summary and the full Transaction Listing, all for the same period, all from the same books.</p><p>Send one file. Keep a copy. Done.</p></div>
+<div class="packcopy"><div class="eyebrow">Year-end, in one click</div><h3>The Period Pack</h3><p>One button assembles the reports your accountant asks for into a single PDF: the Profit &amp; Loss, Account Balances, the Tax Summary and the full Transaction Listing, all for the same period, all from the same books.</p><p>Send one file. Keep a copy. Done.</p></div>
 </div>
 <p class="sub" style="margin-top:28px;text-align:center">Filter any report by date, account, category, payee or status. Sort by any column. Pin the ones you run every month.</p>
-<div class="reportlist" style="justify-content:center"><span>Income and Expense Summary</span><span>Expense Summary</span><span>Income Summary</span><span>Category Summary</span><span>Payee Summary</span><span>Account Balances</span><span>Transaction Listing</span><span>Reconciliation History</span><span>Tax Summary</span><span style="background:var(--gt);border-color:#E8CD8E;color:#7A5A12">★ Period Pack</span></div>
+<div class="reportlist" style="justify-content:center"><span>Profit &amp; Loss</span><span>Expense Summary</span><span>Income Summary</span><span>Category Summary</span><span>Payee Summary</span><span>Account Balances</span><span>Transaction Listing</span><span>Reconciliation History</span><span>Tax Summary</span><span style="background:var(--gt);border-color:#E8CD8E;color:#7A5A12">★ Period Pack</span></div>
 </div></section>
 
 <section class="white"><div class="wrap"><div class="head"><div class="eyebrow">What you get</div><h2>What good bookkeeping looks like.</h2></div>
