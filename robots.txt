@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
-# Staging. At launch: replace with "Allow: /" and add
-# Sitemap: https://ledgercaddy.com/sitemap.xml
+Allow: /
+
+Sitemap: https://ledgercaddy.com/sitemap.xml
