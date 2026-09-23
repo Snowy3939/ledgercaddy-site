@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>LedgerCaddy updates</title>
+    <link>https://ledgercaddy.com/</link>
+    <description>New versions of LedgerCaddy for Mac.</description>
+    <language>en</language>
+    <item>
+      <title>LedgerCaddy 1.0.0-rc.146</title>
+      <pubDate>Wed, 23 Sep 2026 12:33:48 +0000</pubDate>
+      <sparkle:version>100138</sparkle:version>
+      <sparkle:shortVersionString>1.0.0-rc.146</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+      <description>&lt;p&gt;LedgerCaddy now updates itself: it checks once a day and installs new versions with one click. Also in this version: shorter licence keys, a Profit &amp;amp; Loss report, renameable tax names, and the LedgerCaddy mark as the app icon.&lt;/p&gt;</description>
+      <enclosure url="https://github.com/Snowy3939/ledgercaddy-site/releases/download/v1.0.0-rc.146/LedgerCaddy.dmg" length="48282477" type="application/octet-stream" sparkle:edSignature="giIgMbAjrJD3rTvCyt67d29N0JuAF4tI0+TVVs0LjN3aaEWPwh/g2aQhi9DrN2Vd0NwZPel4bGsr/rJNMWrDCw==" />
+    </item>
+  </channel>
+</rss>
