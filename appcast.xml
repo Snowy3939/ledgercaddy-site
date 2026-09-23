@@ -6,6 +6,15 @@
     <description>New versions of LedgerCaddy for Mac.</description>
     <language>en</language>
     <item>
+      <title>LedgerCaddy 1.0.0</title>
+      <pubDate>Wed, 23 Sep 2026 20:56:38 +0000</pubDate>
+      <sparkle:version>100139</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+      <description>&lt;p&gt;LedgerCaddy 1.0.0. The first full release: the release-candidate label is gone, and this is the first version delivered by automatic update. No changes to your books or your licence.&lt;/p&gt;</description>
+      <enclosure url="https://github.com/Snowy3939/ledgercaddy-site/releases/download/v1.0.0/LedgerCaddy.dmg" length="48282504" type="application/octet-stream" sparkle:edSignature="otn0Umw1h9h6yLVk2LLQC3yA5Q8KNGj72eY8ZWJKmHA4/o/vvoIUGh6XJUQX5F6s44O8DTaivEdv7IXbI+J7AA==" />
+    </item>
+    <item>
       <title>LedgerCaddy 1.0.0-rc.146</title>
       <pubDate>Wed, 23 Sep 2026 12:33:48 +0000</pubDate>
       <sparkle:version>100138</sparkle:version>
