@@ -6,6 +6,15 @@
     <description>New versions of LedgerCaddy for Mac.</description>
     <language>en</language>
     <item>
+      <title>LedgerCaddy 1.0.3</title>
+      <pubDate>Thu, 24 Sep 2026 15:26:22 +0000</pubDate>
+      <sparkle:version>100142</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+      <description>&lt;p&gt;LedgerCaddy 1.0.3. The Terms of Use now note that purchases are processed by Lemon Squeezy as merchant of record. No changes to your books or your licence.&lt;/p&gt;</description>
+      <enclosure url="https://github.com/Snowy3939/ledgercaddy-site/releases/download/v1.0.3/LedgerCaddy.dmg" length="48282914" type="application/octet-stream" sparkle:edSignature="eOzPZf7tLPg0+eASL9mrc+HYgIoQqhZ4LLa8oaB9sUfyoIZhR6RXmuu1MK8nsxLGLo0ixZZMcNdFc62GTbbxDw==" />
+    </item>
+    <item>
       <title>LedgerCaddy 1.0.2</title>
       <pubDate>Thu, 24 Sep 2026 11:32:38 +0000</pubDate>
       <sparkle:version>100141</sparkle:version>
